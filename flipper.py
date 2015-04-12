@@ -2,7 +2,7 @@
 # redirect users to 1 of N urls
 
 from flask import Flask
-from . import choices
+import choices
 app = Flask(__name__)
 
 @app.route('/')
