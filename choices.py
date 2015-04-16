@@ -1,8 +1,7 @@
 import random
 _urls = [
-  "http://google.com",
-  "http://amazon.com",
-  "http://twitter.com",
+'https://docs.google.com/a/columbia.edu/forms/d/18__hOdGvK-FFqHYmbgACWUTuSGtUHZrbGe2LXh5VRpA/viewform',
+'https://docs.google.com/a/columbia.edu/forms/d/1nsjxooZk1RmeGD22VJs1lt7D2476r83xJaskZUnNnkQ/viewform'
 ]
 
 def start_ix():

@@ -5,7 +5,7 @@ from flask import Flask, redirect
 import choices as c
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/w1420-survey')
 def flip():
   url, app.config['ix'] = c.next_url(app.config['ix'])
   return redirect(url)
