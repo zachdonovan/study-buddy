@@ -4,19 +4,18 @@ _urls = [
   "http://amazon.com",
   "http://twitter.com",
 ]
-_url_ix = 0
 
-def start():
+def start_ix():
   # choose a random starting point
-  _url_ix = random.randrange(len(_urls))
+  return random.randrange(len(_urls))
 
-def next():
+def next_url(ix):
   # rotate through the available options
-  if _url_ix >= len(_urls):
-    _url_ix = 0
+  if ix >= len(_urls)-1:
+    ix = 0
   else:
-    _url_ix += 1
+    ix += 1
 
-  return _urls[_url_ix]
+  return _urls[ix], ix
 
 
